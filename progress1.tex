@@ -1,0 +1,69 @@
+\documentclass[a4paper,12pt,hyperref]{article}
+
+\title{\bfseries \Large Second harmonic generation in silica whispering-gallery microresonators}
+%\author{\normalsize  Xueyue Zhang}
+\date{\normalsize \today}
+
+\usepackage[left=31.75mm,right=31.75mm]{geometry}
+\usepackage{upgreek}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{xtab}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{amsmath}
+
+
+
+\lstset{
+	flexiblecolumns,
+	basicstyle = \sffamily,
+	keywordstyle = \bfseries,
+	commentstyle = \rmfamily\itshape,
+	stringstyle = \ttfamily
+}
+
+\hypersetup{
+colorlinks=false}
+
+
+
+%\pagestyle{myheadings}
+%\markright{Name: Xueyue Zhang, GTID: 903181650}
+
+\bibliographystyle{unsrt}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+[Literature; origin, set-up, phase-matching, advantages: low pump power, continuous wave, possible applications and impacts]
+
+
+\section{Experimental set-up and observation of second harmonic signal}
+[Explain the set-up and how to collect the signal; show the typical spectra and corresponding experimental conditions; explain why other nonlinear processes are absent; f1f2 comparison and conditions]
+
+In the experiments, a silica microsphere resonator with a diameter of around $62\mathrm{\mu m}$ is used to enhance the intensity of light and  consequently, the second order nonlinear effects. A tapered fiber phase-matched at the telecommunication band couples the pump into the microsphere\cite{knight1997phase, cai2000observation}. This tapered fiber is not able to collect the second harmonic signal efficiently due to phase mismatching at around 780nm and the high radial order of the second harmonic mode\cite{carmon2007visible}. To overcome this problem and collect weak second harmonic signals, another tapered fiber (signal tapered fiber) designed to achieve phase matching condition at second harmonic wavelength is fabricated together with the pump tapered fiber and incorporated into the system as is shown in fig.[set-up]. The tapered fibers can reach critical coupling simultaneously at around 1555nm and 777nm. A fiber coupler split 10\% of the pump power from the laser and a polarization controller into a power meter to monitor the input power. The signals collected by the signal tapered fiber are sent into an electron-multiplying CCD (EMCCD) with gratings to extract the spectra. The EMCCD and the pump laser are placed at the same side of the microsphere considering the linear momentum conservation requirement in SHG\cite{carmon2007visible, kozyreff2008whispering}.
+
+Fig.[SHPumpspectra] shows a typical SH spectrum and the corresponding pump spectrum. The SH signal of 777.75$\pm$0.17nm was observed at the pump wavelength of 1555.14$\pm$0.01nm (the uncertainty is limited by the resolution of the spectrum analyzer and the EMCCD), which satisfies the SHG wavelength relation with reasonable deviation. Raman scattering and parametric oscillation are absent in this mode. 
+
+
+\section{Thermal and Kerr effect assisted phase-matching}
+[Prerequisite phase matching (higher order radial modes) and its problems; P2-P1 relation and how to enhance SH signals; mechanisms for assisted phase-matching; results: dependence on detuning and power; comparison with other SH and silica sphere TH.]
+
+\section{Origin of second order nonlinearity}
+[Theory for surface \& bulk 2nd nonlinearity; relationship with polarization]
+
+[More eg of SH; sum frequency; (TH?)]
+
+
+
+
+
+\bibliography{ref}
+\end{document}
+
