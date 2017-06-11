@@ -191,27 +191,45 @@ The specific measurement plan is beyond the scope of this [letter?].% and is sti
 
 Apart from the unique power response, the SH power enhanced by the microresonator also exhibits a polarization dependence. 
 In the experiment, transverse magnetic (TM) or transverse electric (TE) modes from $1545$ nm to $1565$ nm are pumped separately by adjusting the polarization of the pump light. 
-The maximum SH power of each SHG process is recorded for the two polarization respectively, as shown in the histogram in \ref{pic:Fig3}. 
+The maximum SH power of each SHG process is recorded for the two polarization respectively, as shown in the histogram in fig. \ref{pic:Fig3}. 
 After traversing the wavelength range with each polarization, a total number of $69$ ($40$) SHG incidence is recorded for TM (TE) polarization, and the average SH power is $0.843$ nW ($0.619$ nW). 
 The dependence on polarization originates from the % polarization dependent 
-nonlinear coupling strength $g$ in eq.(\ref{eq:P2P1}), which can be derived from the Helmholtz equation and the relation between electric field and nonlinear polarization%, which bridges the microresonator with the second order nonlinearity of centrosymmetric material. 
+nonlinear coupling strength $g$ in eq.(\ref{eq:P2P1}), which can be derived from the Helmholtz equation and the relation between electric field and nonlinear polarization. %, which bridges the microresonator with the second order nonlinearity of centrosymmetric material. 
 %Using , the coupling coefficient induced by 
 The second order nonlinear coupling arises from the breaking inversion symmetry at the surface and the bulk multipole response. The surface nonlinear coupling strength can be written as
 \begin{equation}
 g_{s0} = 2\frac{\omega_1^2}{\omega_2n^2}\frac{\int_{\mathrm{surface} } \mathbf{E}_{02}^*:\upchi^{(2)}_{s0}:\mathbf{E}_{01}\mathbf{E}_{01} \mathrm{d}	\mathbf{S}}{\int |\mathbf{E}_{02}|^2 \mathrm{d}	\mathbf{V}}
 \end{equation}
 where $n$ is the refractive index, $\upchi^{(2)}_{s0}$ represents the surface nonlinear susceptibility, and $\mathbf{E}_{0i}(\mathbf{x})$ denotes the  normalized electric field. % so that $\alpha_i\mathbf{E}_{0i}(\mathbf{x})$ is the complete electric field. 
-
-The bulk multipole nonlinear polarization can be written as $\mathbf{P}_\gamma =  \gamma\nabla(\mathbf{E}\cdot\mathbf{E})$ and $\mathbf{P}_\delta =  \delta(\mathbf{E}\cdot\nabla)\mathbf{E}$, where $\gamma$ and $\delta$ are the nonlinear coefficients. The first term represents a longitudinal wave and can couple with the SH only at the surface. Therefore it can be incorporated into an effective surface susceptibility $\upchi^{(2)}_s = \upchi^{(2)}_{s0}+\upchi^{(2)}_{s,\gamma}$\cite{heinz1991second}. The coupling coefficient induced by the second term can be written as % $a'$
+The bulk multipole nonlinear polarization in silica can be expressed as $\mathbf{P}^{\mathrm{bulk}} =  \gamma\nabla(\mathbf{E}\cdot\mathbf{E})+\delta(\mathbf{E}\cdot\nabla)\mathbf{E}$ [ref], where $\gamma$ and $\delta$ are the nonlinear coefficients. The first term $\mathbf{P}^{\mathrm{bulk}}_\gamma$ represents a longitudinal wave which can excite SH only at the surface. Therefore $\mathbf{P}^{\mathrm{bulk}}_\gamma$ can contribute to an effective surface susceptibility $\upchi^{(2)}_s = \upchi^{(2)}_{s0}+\upchi^{(2)}_{s,\gamma}$\cite{heinz1991second}, corresponding to an effective coupling strength of $g_s$. The coupling strength induced by the second term $\mathbf{P}^{\mathrm{bulk}}_\delta$ can be written as % $a'$
 \begin{equation}
-g_b =  2\frac{\omega_1^2}{\omega_2n^2}\frac{\int \delta\mathbf{E}_{02}^* \cdot (\mathbf{E}_{01}\cdot\nabla)\mathbf{E}_{01} \mathrm{d}	\mathbf{V}}{\int |\mathbf{E}_{02}|^2 \mathrm{d} \mathbf{V}}
+g_b =  2\frac{\omega_1^2\delta}{\omega_2n^2}\frac{\int \mathbf{E}_{02}^* \cdot (\mathbf{E}_{01}\cdot\nabla)\mathbf{E}_{01} \mathrm{d}	\mathbf{V}}{\int |\mathbf{E}_{02}|^2 \mathrm{d} \mathbf{V}}
 \label{eq:gb}
 \end{equation}
-The total coupling coefficient between the two modes is $g = g_s+g_b$. 
+Thus the total second order nonlinear coupling strength $g = g_s+g_b$. 
 
-There are three non-zero components $\upchi_{\perp \perp \perp}$, $\upchi_{\parallel \parallel \perp}$ and $\upchi_{\perp \parallel \parallel}$ in the surface second order susceptibility tensor of fused silica.  $\upchi_{\perp \perp \perp}$ ($\upchi_{\parallel \parallel \perp}$) plays a major role when TM (TE) mode is pumped. $\upchi_{\perp \parallel \parallel}$ can be ignored in studying SHG due to the non-degeneracy of TM and TE modes. TM modes are preferable in surface induced SHG because $\upchi_{\perp \perp \perp}$ is nearly an order of magnitude larger than $\upchi_{\parallel \parallel \perp}$ \cite{rodriguez2008calibration}. The amplitude of bulk nonlinear response $g_b$ relies on the specific field distribution in the microsphere.  Note that for a TE mode, the divergence is along the polar direction, which exhibits geometric symmetry with regard to the equatorial plane. If both the pumped mode and the SH mode are fundamental in the polar direction (polar number $l$ = azimuthal number $m$), $g_b$ vanishes due to the divergence and the polar symmetry. Because of a better confinement in the radial direction and thus a larger divergence for most of the modes, TM modes tend to have a larger $g_b$ than TE modes. For example, in a silica microsphere with a diameter of 62$\upmu$m, the TM pumped mode with $l_1=m_1=171$ and its SH mode with $l_2=m_2=342$ produces a $g_b$ 18 times larger than that of the TE mode with $l_1-1=m_1=171$ and its SH mode with $l_2-1=m_2=342$ (in both cases, the radial numbers of the pumped mode and SH mode are 1 and 2 respectively due to phase matching considerations). 
+The effective surface susceptibility tensor $\upchi^{(2)}_s$ contains three non-zero components $\upchi_{\perp \perp \perp}$, $\upchi_{\parallel \parallel \perp}$ and $\upchi_{\perp \parallel \parallel}$, where $\perp$ denotes the electric field direction perpendicular to the surface and $\parallel$ corresponds to the parallel direction. 
+$\upchi_{\perp \parallel \parallel}$ can be ignored in studying SHG due to the non-degeneracy of TM and TE pump modes.  
+$\upchi_{\perp \perp \perp}$ ($\upchi_{\parallel \parallel \perp}$) plays a major role when TM (TE) mode is pumped, which only generates the TM polarized second harmonic in both cases. 
+TM modes are preferable in surface induced SHG because $\upchi_{\perp \perp \perp}$ is larger than $\upchi_{\parallel \parallel \perp}$ \cite{rodriguez2008calibration}. 
+Considering the bulk nonlinear response induced by $\mathbf{P}^{\mathrm{bulk}}_\delta$, the coupling strength $g_b$ relies on the specific field distribution in the cavity and the generated SH exhibits the same polarization as the pump mode. 
+Note that for TE polarization, the field direction is along the polar direction, so that the polar symmetry of modes prohibits the excitation of SH modes with an even polar distribution from $\mathbf{P}^{\mathrm{bulk}}_\delta$. 
+While the TM pump modes, with electric field along the radial direction, can excite second harmonic without the above restriction.
+ %the coupling strength $g_b$ involving an SH mode with  for a TE mode, the divergence is along the polar direction, which exhibits geometric symmetry with regard to the equatorial plane. 
+%If both the pumped mode and the SH mode are fundamental in the polar direction (polar number $l$ = azimuthal number $m$), $g_b$ vanishes due to the divergence and the polar symmetry. 
+Because of a stronger confinement in the radial direction than the polar direction and thus a larger divergence for most of the modes, TM modes tend to link with a larger $g_b$ than TE modes. 
+Consequently, from both the surface and the bulk second order nonlinearity, TM pump modes can generate stronger SH signals statistically, which agrees with the measurement shown in fig. \ref{pic:Fig3}
+%For example, in a silica microsphere with a diameter of 62$\upmu$m, the TM pumped mode with $l_1=m_1=171$ and its SH mode with $l_2=m_2=342$ produces a $g_b$ 18 times larger than that of the TE mode with $l_1-1=m_1=171$ and its SH mode with $l_2-1=m_2=342$ (in both cases, the radial numbers of the pumped mode and SH mode are 1 and 2 respectively due to phase matching considerations). 
 
-The polarization dependence can be utilized to add to the surface specificity for SHG sensing. Mediated by $\upchi_{\parallel \parallel \perp}$, two TE polarized photons can generate a TM polarized photon. For nonlinearity from bulk multipole effects ($g_b$), TE polarized pump can only generate TE SH. In this case, the bulk response can be eliminated and thus restricting the SHG on the surface.
+The polarization dependence can be utilized to add to the surface specificity for SHG sensing, where the bulk nonlinear response of both $\mathbf{P}^{\mathrm{bulk}}_\gamma$ and $\mathbf{P}^{\mathrm{bulk}}_\delta$ should be eliminated.
+The former effect does not contribute to susceptibility $\upchi_{\parallel \parallel \perp}$, corresponding to the TE polarized pump [heinz]. 
+% , 
+The latter can also be discerned from the surface nonlinear response with the TE polarized pump.
+In this case, an SH signal with a TM polarization can only originate from the surface nonlinearity ($\upchi_{\parallel \parallel \perp}$) because $\mathbf{P}^{\mathrm{bulk}}_\delta$ requires the same polarization between the pump mode and the SH mode.
+Furthermore, when a fundamental [] TE mode ($l_1=m_1$) is pumped, only the fundamental SH modes ($l_2=m_2$) are allowed by the selection rule [], which cannot be excited from $\mathbf{P}^{\mathrm{bulk}}_\delta$ due to even polar field distribution of the SH mode.
+In the experiment, we employ a fundamental TE pump mode at xx nm and obtain a surface-only second harmonic deterministically without measuring the SH polarization.
+
+%Mediated by , two TE polarized photons can generate a TM polarized photon. For nonlinearity from bulk multipole effects ($g_b$), TE polarized pump can only generate TE SH. In this case, the bulk response can be eliminated and thus restricting the SHG on the surface.
 
 
 
@@ -226,8 +244,9 @@ The polarization dependence can be utilized to add to the surface specificity fo
 
 %[More eg of SH; sum frequency]
 
-Sum frequency generation (SFG) can also take place when the pumped mode produce a Raman signal. 
-Shown in fig.\ref{pic:Fig4}b is an SF signal ($804.67$ nm) and the corresponding pump ($1550.88$ nm) and its Raman signal ($1674.22$ nm) with an input power of $7.33$ mW, which is above the Raman threshold for this mode. The deviation of the SF wavelength from the expected value ($804.63$ nm) is much smaller than the resolution of EMCCD.
+Additionally, sum frequency generation (SFG) can also arise when a Raman signal is stimulated by the pump light. 
+Shown in fig.\ref{pic:Fig4} is an SF signal ($804.67$ nm) and the corresponding pump ($1550.88$ nm) and its Raman signal ($1674.22$ nm) with an input power of $7.33$ mW, which is above the Raman threshold for this mode. 
+The deviation of the SF wavelength from the expected value ($804.63$ nm) is much smaller than the resolution of EMCCD.
 %The measured wavelengths satisfy the SFG relation $1/1550.88$ $\mathrm{nm} +1/1674.22$ $\mathrm{nm} = 1/804.63$ $\mathrm{nm}$, which is close to the measured SF wavelength 804.67 nm.
 
 [Conclusion]
