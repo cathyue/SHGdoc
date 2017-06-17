@@ -101,7 +101,7 @@ The former can be fulfilled by a pair of modes with proper angular momentum rela
 The material and geometric dispersion presents a challenge on energy conservation, obstructing the double resonance $\omega_2=2\omega_1$ and consequently, efficient SHG. 
 More accurately, the SH power can be derived from coupled mode equations (see Supplementary Information)
 \begin{equation}
-P_2 = \frac{4|g|^2\kappa_{2e}Q_2^2/\omega_2^2}{4Q_2^2(2\omega_p/\omega_2-1)^2+1}\frac{16\kappa_{1e}^2Q_1^4/\omega_2^4}{[4Q_1^2(\omega_p/\omega_1-1)^2+1]^2}P_1^2,
+P_2 = \frac{4|g|^2\kappa_{2e}Q_2^2/\omega_2^2}{4Q_2^2(2\omega_p/\omega_2-1)^2+1}\frac{16\kappa_{1e}^2Q_1^4/\omega_1^4}{[4Q_1^2(\omega_p/\omega_1-1)^2+1]^2}P_1^2,
 \label{eq:P2P1}
 \end{equation}
 where the subscripts $j=1, 2$  represent the pump cavity mode and SH mode respectively with $\omega_j$ being the resonant frequency and $Q_j$ the loaded quality factor, $\omega_p$ and $P_1$ denotes the pump frequency and power respectively, $g$ is the second-order nonlinear coupling strength between the two modes, and $\kappa_{je}$ represents the external coupling rate. The pump power depletion is ignored due to the weak second-order nonlinear effect in silica.
@@ -155,7 +155,7 @@ It is also possible to obtain the explicit $P_2 \propto P_1^2$ dependence by int
 In order to distinguish the contributions of surface and bulk nonlinearity, we investigate the polarization dependence in SHG.  
 In equation (\ref{eq:P2P1}), the nonlinear coupling strength from surface dipole response can be written as (see Supplementary Information)
 \begin{equation}
-g_{s0} = 2\frac{\omega_1^2}{\omega_2n^2}\frac{\int_{\mathrm{surface} } \mathbf{E}_{02}^*:\upchi^{(2)}_{s0}:\mathbf{E}_{01}\mathbf{E}_{01} \mathrm{d}	\mathbf{S}}{\int |\mathbf{E}_{02}|^2 \mathrm{d}	\mathbf{V}}
+g_{s0} = 2\frac{\omega_1^2}{\omega_2n^2}\frac{\int_{\mathrm{surface} } \mathbf{E}_{02}^* \cdot \upchi^{(2)}_{s0}:\mathbf{E}_{01}\mathbf{E}_{01} \mathrm{d}	\mathbf{S}}{\int |\mathbf{E}_{02}|^2 \mathrm{d}	\mathbf{V}}
 \end{equation}
 where $\upchi^{(2)}_{s0}$ represents the surface nonlinear susceptibility, $\mathbf{E}_{0j}(\mathbf{x})$ denotes the  normalized electric field, and $n$ is the refractive index of the cavity material. 
 The bulk multipole nonlinear polarization in silica can be expressed as $\mathbf{P}^{\mathrm{bulk}} =  \gamma\nabla(\mathbf{E}\cdot\mathbf{E})+\delta(\mathbf{E}\cdot\nabla)\mathbf{E}$ \cite{bloembergen1968optical}, where $\gamma$ and $\delta$ are the nonlinear coefficients. The first term $\mathbf{P}^{\mathrm{bulk}}_\gamma$ represents a longitudinal wave which can excite SH only at the surface. Therefore $\mathbf{P}^{\mathrm{bulk}}_\gamma$ can contribute to an effective surface susceptibility\cite{heinz1991second} $\upchi^{(2)}_s = \upchi^{(2)}_{s0}+\upchi^{(2)}_{s,\gamma}$, corresponding to an effective coupling strength of $g_s$. The coupling strength induced by the second term $\mathbf{P}^{\mathrm{bulk}}_\delta$ can be written as 
@@ -221,8 +221,8 @@ The EMCCD and the pump laser are placed at the same side of the microsphere cons
 
 \noindent The SHG in the microresonator can be described by the following coupled mode equations
 \begin{gather}
-\frac{d{\alpha}_1}{dt} = [i(\omega_p-\omega_1)-\frac{\kappa_{10}+\kappa_{1e}}{2}]{\alpha}_1+\sqrt{\kappa_{1e}}s+ig^*{\alpha}_1{\alpha}_2^* \\
-\frac{d{\alpha}_2}{dt} = [i(2\omega_p-\omega_2)-\frac{\kappa_{20}+\kappa_{2e}}{2}]{\alpha}_2-ig{\alpha}_1^2
+\frac{d{\alpha}_1}{dt} = [i(\omega_p-\omega_1)-\frac{\kappa_{10}+\kappa_{1e}}{2}]{\alpha}_1+\sqrt{\kappa_{1e}}s-ig^*{\alpha}_1^*{\alpha}_2 \\
+\frac{d{\alpha}_2}{dt} = [i(2\omega_p-\omega_2)-\frac{\kappa_{20}+\kappa_{2e}}{2}]{\alpha}_2+ig{\alpha}_1^2
 \label{eq:cpmoder}
 \end{gather}
 where ${\alpha}_1$ denotes the field amplitude in the cavity, $s$ is the amplitude of the pump, and $\kappa_{j0}$ ($j = 1,2$) represents the intrinsic loss rate, which is related to the intrinsic $Q$ as $\kappa_{j0} = \omega_{j}/Q_{j0}$. 
